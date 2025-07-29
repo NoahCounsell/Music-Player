@@ -150,7 +150,7 @@ document.addEventListener('keydown', e => {
 });
 
 searchInput.addEventListener('input', (e) => {
-    getSongs(e.target.value.toLowerCase().replaceAll(' ', '-'));
+    getSongs(e.target.value.toLowerCase().trim().replaceAll(' ', '-'));
 });
 
 if(searchInput.value === '') {
